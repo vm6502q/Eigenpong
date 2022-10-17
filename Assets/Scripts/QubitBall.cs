@@ -217,13 +217,13 @@ public class QubitBall : MonoBehaviour
         {
             qubit.X(0);
         }
-        if (playerUI[player].h.isActive)
-        {
-            qubit.H(0);
-        }
         if (playerUI[player].z.isActive)
         {
             qubit.Z(0);
+        }
+        if (playerUI[player].h.isActive)
+        {
+            qubit.H(0);
         }
         if (playerUI[player].s.isActive)
         {

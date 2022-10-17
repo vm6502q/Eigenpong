@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerUI : MonoBehaviour
 {
     public UIButton x;
-    public UIButton h;
     public UIButton z;
+    public UIButton h;
     public UIButton s;
     public UIScroll control;
     public UIScroll pauli;
@@ -19,14 +19,14 @@ public class PlayerUI : MonoBehaviour
             x.Toggle();
         }
 
-        if (Input.GetButton("H"))
-        {
-            h.Toggle();
-        }
-
         if (Input.GetButton("Z"))
         {
             z.Toggle();
+        }
+
+        if (Input.GetButton("H"))
+        {
+            h.Toggle();
         }
 
         if (Input.GetButton("S"))
