@@ -421,5 +421,17 @@ namespace OpenRelativity
 
             return deltaR;
         }
+
+        public static double HawkingSchwarzschildRadiusDecay(double deltaTime, double r)
+        {
+            double deltaR = -deltaTime * state.hbar / (1920 * Math.PI * r * r * Math.Pow(c, 6));
+
+            if ((r + deltaR) < 0)
+            {
+                deltaR = -r;
+            }
+
+            return deltaR;
+        }
     }
 }
